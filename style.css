@@ -1,0 +1,80 @@
+body {
+    font-family: copperplate;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  button {
+    <!-- HTML !-->
+  <button class="button-52" role="button">Button 52</button>
+  
+  /* CSS */
+  .button-52 {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid yellow;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-52:after {
+    content: "";
+    background-color: yellow;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button-52:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-52 {
+      padding: 13px 50px 13px;
+    }
+  }
+  }
+  
+  .color-btn {
+    font-size: 18px;
+    border: none;
+  }
+  
+  .reveal-answer {
+    background-color: yellow;
+    color: black;
+    font-family: copperplate;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .answer {
+    display: none;
+    color: #333;
+    font-style: italic;
+  }
+  
+  .question {
+    margin-bottom: 30px;
+  }
